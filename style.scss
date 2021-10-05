@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,900;1,300&display=swap");
+$dark-bk: #1f2937;
+$hero-main: 48px;
+$hero-weight: 900;
+$hero-secondary: 18px;
+$header-logo: 24px;
+$button-color-call: #3882f6;
+$info-header: 36px;
+$quote-color: #e5e7eb;
+$quote-text: 36px;
+$quote-weight: 300;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro";
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 450px) 100px;
+  height: 100vh;
+}
+
+.random-img {
+  background-color: #fff;
+  h1 {
+    font-size: $quote-text;
+    width: 100%;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+  }
+  .image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+  }
+}
+.quote {
+  display: grid;
+  place-content: center;
+  background-color: $quote-color;
+  .quote-container {
+    width: 500px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-weight: $quote-weight;
+    font-size: $quote-text;
+    p {
+      font-size: 1rem;
+      align-self: flex-end;
+      font-weight: 900;
+    }
+  }
+}
+.call__banner__button:hover {
+  background-color: white;
+  color: black;
+}
+.call {
+  display: grid;
+  place-content: center;
+  color: #fff;
+  .call__banner {
+    width: 700px;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    background-color: $button-color-call;
+    border-radius: 10px;
+    .call__banner__text {
+      font-weight: 900;
+      p {
+        font-weight: 400;
+      }
+    }
+
+    .call__banner__button {
+      border: 1px solid white;
+      margin: auto;
+      width: 80px;
+      height: 30px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+header {
+  background-color: $dark-bk;
+  color: #fff;
+}
+.header__head {
+  display: flex;
+  justify-content: end;
+  color: #c5c5c5;
+  .header__link-2 {
+    margin-left: 15px;
+  }
+  .header__link-3 {
+    margin-left: 15px;
+  }
+  margin-right: 50px;
+}
+.header__content {
+  height: 100%;
+  display: flex;
+  padding: 50px;
+  .header__text {
+    display: grid;
+    height: 100%;
+    place-content: center;
+    padding-right: 400px;
+  }
+  .header__image {
+    width: 350px;
+    height: 250px;
+    img {
+      width: 350px;
+      height: 250px;
+    }
+  }
+}
+footer {
+  color: #fff;
+  background-color: rgb(48, 47, 47);
+  display: grid;
+  place-content: center;
+}
