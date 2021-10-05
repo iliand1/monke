@@ -104,6 +104,17 @@ body {
   display: flex;
   background-color: #3882f6;
   border-radius: 10px;
+  place-content: center;
+}
+
+.call .call__banner .call__banner__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .call .call__banner .call__banner__text {
@@ -116,7 +127,6 @@ body {
 
 .call .call__banner .call__banner__button {
   border: 1px solid white;
-  margin: auto;
   width: 80px;
   height: 30px;
   border-radius: 10px;
@@ -126,6 +136,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

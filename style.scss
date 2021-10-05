@@ -79,6 +79,13 @@ body {
     display: flex;
     background-color: $button-color-call;
     border-radius: 10px;
+    place-content: center;
+    .call__banner__wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
     .call__banner__text {
       font-weight: 900;
       p {
@@ -88,12 +95,13 @@ body {
 
     .call__banner__button {
       border: 1px solid white;
-      margin: auto;
+
       width: 80px;
       height: 30px;
       border-radius: 10px;
       display: flex;
       justify-content: center;
+      align-self: center;
       align-items: center;
     }
   }
