@@ -159,6 +159,17 @@ header {
   margin-right: 50px;
 }
 
+.header__head .header__logo {
+  width: 80%;
+}
+
+.header__head .header__logo > img {
+  position: absolute;
+  left: 30px;
+  width: 60px;
+  height: 40px;
+}
+
 .header__head .header__link-2 {
   margin-left: 15px;
 }
